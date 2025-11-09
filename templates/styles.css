@@ -40,7 +40,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1600');
+    background-image: url('/src/landing.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -188,6 +188,37 @@ footer a:hover {
     opacity: 0.7;
 }
 
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+    box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float i {
+    line-height: 60px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-section {
@@ -206,6 +237,19 @@ footer a:hover {
 
     .service-card {
         margin-bottom: 30px;
+    }
+
+    /* Adjust WhatsApp button for mobile */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+
+    .whatsapp-float i {
+        line-height: 50px;
     }
 }
 
